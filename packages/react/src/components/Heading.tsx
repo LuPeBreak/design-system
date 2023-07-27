@@ -29,6 +29,9 @@ export const Heading = styled('h2', {
       '5xl': {
         fontSize: '$8xl',
       },
+      '6xl': {
+        fontSize: '$9xl',
+      },
     },
   },
 

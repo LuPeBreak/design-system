@@ -8,6 +8,13 @@ export default {
     src: 'https://github.com/lupebreak.png',
     alt: 'AltText',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
