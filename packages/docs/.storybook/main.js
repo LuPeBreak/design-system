@@ -27,7 +27,7 @@ const config = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/ignite-design-system/'
+      config.base = '/design-system/'
     }
 
     return config

@@ -1,7 +1,7 @@
-<h1 align="center"> Ignite UI - Design System </h1>
+<h1 align="center"> LuPeBreak UI - Design System </h1>
 
 <p align="center">
-  Voce pode encontrar demo do projeto no github pages nesse <a href="https://lupebreak.github.io/ignite-design-system">Link</a>
+  Voce pode encontrar demo do projeto no github pages nesse <a href="https://lupebreak.github.io/design-system">Link</a>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
