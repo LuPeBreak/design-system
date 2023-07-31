@@ -1,7 +1,7 @@
 {
   "name": "@lupebreak-ui/react",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "React Components from lupebreak-ui design system",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
