@@ -36,6 +36,7 @@ const ControlledToast = ({ onOpenChange, open: _, ...args }: ToastProps) => {
     </Box>
   )
 }
+ControlledToast.displayName = 'Toast'
 export const Primary: StoryObj<ToastProps> = {}
 
 export const Controlled: StoryObj<ToastProps> = {
