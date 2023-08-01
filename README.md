@@ -39,12 +39,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [x] Checkbox
 - [x] Avatar
 - [x] MultiStep
+- [x] Tooltip
+- [x] Toast
 
 ## Pacotes Públicos
 
 - [x] Tokens do Design System
 - [x] Componentes React
-- [x] Documentação com Storybook
 
 ## 💻 Projeto
 
