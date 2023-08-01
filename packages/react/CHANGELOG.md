@@ -1,5 +1,11 @@
 # @lupebreak-ui/react
 
+## 1.2.0
+
+### Minor Changes
+
+- Add: Toast and Tooltip React Components
+
 ## 1.1.1
 
 ### Patch Changes
