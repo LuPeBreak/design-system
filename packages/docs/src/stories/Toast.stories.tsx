@@ -19,7 +19,7 @@ export default {
       control: 'text',
     },
     open: {
-      description: 'Booleans controlling open and close',
+      description: 'Boolean controlling open and close',
     },
     onOpenChange: {
       description: 'Function controlling open state',

@@ -1,5 +1,11 @@
 # @lupebreak-ui/react
 
+## 1.3.0
+
+### Minor Changes
+
+- Remade tooltip component, now using radix ui
+
 ## 1.2.0
 
 ### Minor Changes

@@ -1,40 +1,31 @@
 import {
-  TooltipContainer,
-  TooltipBox,
-  TooltipCenteredContainer,
+  TooltipArrow,
+  TooltipContent,
+  TooltipProvider,
+  TooltipRoot,
 } from './styles'
 import { Text } from '../Text'
-import { CaretDown } from 'phosphor-react'
-import { ComponentProps, useState } from 'react'
+import { ComponentProps } from 'react'
+import { TooltipPortal, TooltipTrigger } from '@radix-ui/react-tooltip'
 
-export interface TooltipProps extends ComponentProps<typeof TooltipBox> {
+export interface TooltipProps extends ComponentProps<typeof TooltipRoot> {
   text: string
   active?: boolean
   showOnHover?: boolean
 }
-export function Tooltip({
-  text,
-  children,
-  active = false,
-  showOnHover = false,
-  ...props
-}: TooltipProps) {
-  const [isOnHover, setIsOnHover] = useState(false)
+export function Tooltip({ text, children, ...props }: TooltipProps) {
   return (
-    <TooltipContainer
-      onMouseEnter={() => showOnHover && setIsOnHover(true)}
-      onMouseLeave={() => showOnHover && setIsOnHover(false)}
-    >
-      {children}
-      {(active || isOnHover) && (
-        <TooltipCenteredContainer>
-          <TooltipBox {...props}>
+    <TooltipProvider>
+      <TooltipRoot {...props}>
+        <TooltipTrigger asChild>{children}</TooltipTrigger>
+        <TooltipPortal>
+          <TooltipContent>
             <Text>{text}</Text>
-          </TooltipBox>
-          <CaretDown size={17} weight="fill" />
-        </TooltipCenteredContainer>
-      )}
-    </TooltipContainer>
+            <TooltipArrow />
+          </TooltipContent>
+        </TooltipPortal>
+      </TooltipRoot>
+    </TooltipProvider>
   )
 }
 Tooltip.displayName = 'Tooltip'
